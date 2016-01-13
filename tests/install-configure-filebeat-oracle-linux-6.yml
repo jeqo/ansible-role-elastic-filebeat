@@ -6,3 +6,11 @@
   roles:
     - role: elastic-filebeat
       filebeat_version: 1.0.1
+      filebeat_logstash_host: 192.168.56.1
+      filebeat_logstash_port: 5000
+      filebeat_logs:
+        -
+          type: log_type
+          logs:
+            - /var/log/test1.log
+            - /var/log/test2.log

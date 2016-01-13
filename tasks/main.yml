@@ -6,8 +6,8 @@
   tags:
     - install
 
-- include: configure-filebeat.yml
+- include: configure-filebeat-logstash.yml
   become: true
   become_user: root
   tags:
-    - configure
+    - configure-logstash
