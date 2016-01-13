@@ -11,6 +11,6 @@
       filebeat_logs:
         -
           type: log_type
-          logs:
+          paths:
             - /var/log/test1.log
             - /var/log/test2.log
