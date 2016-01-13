@@ -1,14 +1,14 @@
 filebeat:
   prospectors:
-    {% for log in filebeat_logs %}
+{% for log in filebeat_logs %}
     -
       paths:
-        {% for path in log.paths %}
+{% for path in log.paths %}
         - {{ path }}
-        {% endfor %}
+{% endfor %}
       input_type: log
       document_type: {{ log.type }}
-    {% endfor %}
+{% endfor %}
 output:
   logstash:
     hosts: ["{{ filebeat_logstash_host }}:{{ filebeat_logstash_port }}"]
