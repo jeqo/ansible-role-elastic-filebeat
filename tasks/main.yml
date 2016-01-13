@@ -3,3 +3,11 @@
 - include: install-filebeat.yml
   become: true
   become_user: root
+  tags:
+    - install
+
+- include: configure-filebeat.yml
+  become: true
+  become_user: root
+  tags:
+    - configure

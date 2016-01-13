@@ -1,0 +1,7 @@
+---
+#
+- name: prepare filebeat to logstash config file
+  template: src=filebeat-logstash.yml.j2 dest=/etc/filebeat/filebeat.yml
+
+- name: start and enable filebeat service
+  service: name=filebeat enabled=yes state=started
