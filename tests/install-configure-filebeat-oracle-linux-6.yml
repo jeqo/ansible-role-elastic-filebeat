@@ -1,0 +1,8 @@
+---
+#
+- name: test install and configure filebeat
+  hosts: 127.0.0.1
+
+  roles:
+    - role: elastic-filebeat
+      filebeat_version: 1.0.1

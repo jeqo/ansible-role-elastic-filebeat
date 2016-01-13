@@ -1,0 +1,3 @@
+# Install a role from the Ansible Galaxy
+- src: jeqo.elastic-filebeat
+  name: elastic-filebeat

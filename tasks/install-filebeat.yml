@@ -1,0 +1,8 @@
+---
+#
+
+- name: download filebeat
+  get_url: url=https://download.elastic.co/beats/filebeat/filebeat-{{ filebeat_version }}-x86_64.rpm dest=/tmp/filebeat.rpm
+
+- name: install filebeat
+  yum: name=/tmp/filebeat.rpm state=present

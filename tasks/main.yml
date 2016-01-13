@@ -1,0 +1,3 @@
+---
+# tasks file for elastic-filebeat
+- include: install-filebeat.yml
