@@ -1,8 +1,8 @@
 ---
 # defaults file for elastic-filebeat
-filebeat_version: #1.0.1
+filebeat_version: 1.0.1 #1.0.1
 # filebeat to logstash vers
-filebeat_logstash_host: #
-filebeat_logstash_port: #
+filebeat_logstash_host: localhost #
+filebeat_logstash_port: 500 #
 filebeat_logs: []
   # - { type: log_type, logs: [] }
